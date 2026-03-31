@@ -27,7 +27,7 @@ export function HeroSection() {
             lihtsalt töötab, et sina saaksid keskenduda oma päris tööle.
           </p>
           <div
-            className="hero-in mt-10 flex items-center gap-4"
+            className="hero-in mt-10 flex flex-col items-center gap-4 md:flex-row"
             style={{ animationDelay: "340ms" }}
           >
             <Button asChild size="lg" className="group">
