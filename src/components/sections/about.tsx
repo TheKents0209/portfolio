@@ -6,7 +6,7 @@ export function AboutSection() {
     <section id="meist" className="px-6 py-16 md:py-24">
       <div className="mx-auto max-w-5xl">
         <div className="grid items-center gap-12 md:grid-cols-5 md:gap-16">
-          <AnimateIn className="md:col-span-2">
+          <AnimateIn className="md:order-last md:col-span-2" delay={100}>
             <Image
               src="/me/avatar.webp"
               alt="Kenert Lauri portree"
@@ -16,7 +16,7 @@ export function AboutSection() {
             />
           </AnimateIn>
 
-          <AnimateIn className="md:col-span-3" delay={100}>
+          <AnimateIn className="md:col-span-3">
             <h2 className="text-3xl font-medium tracking-tight md:text-4xl">Kenert Lauri</h2>
             <p className="text-muted-foreground mt-4 leading-relaxed">
               Olen veebiarendaja ja{" "}

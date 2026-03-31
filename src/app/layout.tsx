@@ -1,22 +1,21 @@
-import type { Metadata } from 'next';
-import { Geist } from 'next/font/google';
-import { Inter } from 'next/font/google';
-import './globals.css';
+import type { Metadata } from "next";
+import { Geist, Plus_Jakarta_Sans } from "next/font/google";
+import "./globals.css";
 
 const geist = Geist({
-  variable: '--font-geist',
-  subsets: ['latin'],
+  variable: "--font-geist",
+  subsets: ["latin"],
 });
 
-const inter = Inter({
-  variable: '--font-inter',
-  subsets: ['latin'],
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: 'Kenert Lauri | Veebiarendus',
+  title: "Kenert Lauri | Veebiarendus",
   description:
-    'Kiired, turvalised ja hooldusevabad veebilehed ettevõtetele. Ei mingit WordPressi peavalu.',
+    "Kiired, turvalised ja hooldusevabad veebilehed ettevõtetele. Ei mingit WordPressi peavalu.",
 };
 
 export default function RootLayout({
@@ -25,8 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="et" className={`${geist.variable} ${inter.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="et" className={`${geist.variable} ${jakarta.variable} h-full antialiased`}>
+      <body className="flex min-h-full flex-col">{children}</body>
     </html>
   );
 }

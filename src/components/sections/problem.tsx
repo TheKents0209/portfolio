@@ -23,10 +23,10 @@ const painPoints = [
 
 export function ProblemSection() {
   return (
-    <section id="probleem" className="px-6 py-16 md:py-20">
+    <section id="probleem" className="px-6 py-16 md:py-24">
       <div className="mx-auto max-w-5xl">
         <AnimateIn>
-          <h2 className="max-w-xl text-3xl font-medium tracking-tight md:text-4xl">
+          <h2 className="max-w-xl text-2xl font-medium tracking-tight md:text-3xl">
             Kas su koduleht tekitab rohkem peavalu kui kasu?
           </h2>
           <p className="text-muted-foreground mt-4 max-w-lg">
@@ -35,19 +35,21 @@ export function ProblemSection() {
         </AnimateIn>
 
         <AnimateIn delay={100}>
-          <div className="border-border bg-border mt-12 grid gap-px overflow-hidden rounded-xl border md:grid-cols-3">
+          <div className="divide-border mt-12 divide-y">
             {painPoints.map((point) => (
               <div
                 key={point.number}
-                className="bg-background hover:bg-muted/40 p-6 transition-colors duration-200 md:p-8"
+                className="grid gap-1 py-6 first:pt-0 last:pb-0 md:grid-cols-[3rem_1fr] md:gap-4 md:py-8"
               >
-                <span className="font-heading text-primary text-xs font-medium">
+                <span className="font-heading text-primary text-sm font-medium">
                   {point.number}
                 </span>
-                <h3 className="mt-3 text-base font-medium">{point.title}</h3>
-                <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
-                  {point.description}
-                </p>
+                <div>
+                  <h3 className="text-base font-medium">{point.title}</h3>
+                  <p className="text-muted-foreground mt-1.5 max-w-lg text-sm leading-relaxed">
+                    {point.description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>

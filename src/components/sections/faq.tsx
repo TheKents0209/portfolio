@@ -29,29 +29,9 @@ const faqs = [
       "Absoluutselt, see on väga levinud olukord. Tõstan sinu tekstid ja pildid uuele kiirele platvormile ning hoolitsen selle eest, et Google ja sinu senised kliendid leiaksid uue lehe ilusti üles. Üleminek on sujuv ja sinu äri ei jää vahepeal seisma.",
   },
   {
-    question: "Kas teed lehti ka mitmes keeles?",
-    answer:
-      "Jah. Kuna toimetan ise igapäevaselt eesti, soome ja inglise keeles, on mitmekeelsed lehed mulle väga tuttav teema. Iga keel saab oma loogilise struktuuri, et leht töötaks kiirelt ja oleks otsingumootorites hästi leitav.",
-  },
-  {
     question: "Mis saab pärast lehe valmimist?",
     answer:
       "Leht ei jää üksi. Pärast üleandmist näitan sulle rahulikult ette, kuidas sisuhaldus töötab. Kui midagi tekib, olen alati ühe sõnumi kaugusel. Lisaks, kuna leht on ehitatud kaasaegse tehnoloogiaga, ei ole vaja pidevalt pluginaid uuendada ega turvaaukude pärast muretseda nagu WordPressis.",
-  },
-  {
-    question: "Kas leht töötab ka telefonis?",
-    answer:
-      "Iga leht, mille ehitan, on mobiilile optimeeritud algusest peale. Enamik inimesi vaatab lehte just telefonist, nii et see pole lisa, vaid alus.",
-  },
-  {
-    question: "Kas mu leht tuleb Google'is üles?",
-    answer:
-      "Jah. Hoolitsen selle eest, et leht oleks tehniliselt otsimootoritele arusaadav, kiire ja korrektselt üles ehitatud. See annab tugeva aluse, aga Google'is kõrgele jõudmine sõltub ka sisu kvaliteedist ja järjepidevusest. Aitan sul õiged sammud paika panna.",
-  },
-  {
-    question: "Mida mul endal vaja ette valmistada?",
-    answer:
-      "Ideaalis on sul olemas oma logo, paar fotot ja ettekujutus, mida leht tegema peaks. Aga kui midagi puudu on, aitan selle koos välja mõelda. Teksti saad lisada ka siis, kui leht juba valmib.",
   },
 ];
 
@@ -61,7 +41,7 @@ export function FAQSection() {
       <div className="mx-auto max-w-5xl">
         <div className="grid gap-10 md:grid-cols-5 md:gap-16">
           <div className="md:col-span-2">
-            <h2 className="text-3xl font-medium tracking-tight md:text-4xl">
+            <h2 className="text-2xl font-medium tracking-tight md:text-3xl">
               Küsimused ja vastused
             </h2>
             <p className="text-muted-foreground mt-4">

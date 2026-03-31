@@ -20,7 +20,7 @@ export function ImageLightbox({ src, alt, url, isInteractive, lightbox }: ImageL
   return (
     <>
       <div
-        className={`relative ${lightbox ? "cursor-zoom-in" : ""}`}
+        className={`relative ${lightbox ? "focus-visible:outline-ring cursor-zoom-in rounded-t-xl focus-visible:outline-2 focus-visible:outline-offset-2" : ""}`}
         onClick={lightbox ? () => setOpen(true) : undefined}
         role={lightbox ? "button" : undefined}
         tabIndex={lightbox ? 0 : undefined}
@@ -46,13 +46,14 @@ export function ImageLightbox({ src, alt, url, isInteractive, lightbox }: ImageL
           />
         </BrowserFrame>
 
-        {/* Zoom icon hint */}
+        {/* Zoom icon hint — always visible, stronger on hover */}
         {lightbox && (
           <div
-            className="bg-background/80 text-muted-foreground pointer-events-none absolute right-2 bottom-2 rounded-lg p-1.5 opacity-0 backdrop-blur-sm transition-opacity group-hover:opacity-100"
+            className="bg-background/80 text-muted-foreground pointer-events-none absolute right-2 bottom-2 flex items-center gap-1.5 rounded-lg px-2 py-1 text-xs opacity-70 backdrop-blur-sm transition-opacity group-hover:opacity-100"
             aria-hidden="true"
           >
             <Expand className="size-3.5" />
+            <span>Suurenda</span>
           </div>
         )}
       </div>

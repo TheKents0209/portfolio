@@ -13,10 +13,9 @@ const projects = [
     tags: ["E-pood", "Next.js", "Stripe", "Supabase"],
   },
   {
-    title: "Sanalliset — admin",
+    title: "Sanalliset — haldustarkvara",
     description:
       "Sanalliset'i sisene haldustarkvara tellimuste täitmiseks, laoseisu, klientide ja analüütika haldamiseks. Reaalajas KPI-d, automaatsed arvustusepäringud ja DPD/Posti saatmisintegratsioonid.",
-    url: "192.168.50.10:3000",
     image: "/projects/sanalliset-admin.webp",
     tags: ["Haldustööriist", "Next.js", "Supabase", "Mailersend"],
   },
@@ -24,26 +23,29 @@ const projects = [
 
 export function PortfolioSection() {
   return (
-    <section id="portfoolio" className="border-border/40 bg-muted/30 border-y px-6 py-16 md:py-24">
+    <section id="portfoolio" className="border-border/40 bg-muted/30 border-y px-6 py-20 md:py-28">
       <div className="mx-auto max-w-5xl">
         <AnimateIn>
-          <h2 className="text-3xl font-medium tracking-tight md:text-4xl">Tehtud tööd</h2>
+          <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">Tehtud tööd</h2>
+          <p className="text-muted-foreground mt-3 max-w-lg">
+            Projektid, mille olen algusest lõpuni üles ehitanud.
+          </p>
         </AnimateIn>
 
-        <AnimateIn delay={80}>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2">
-            {projects.map((project) => {
-              const isLink = !!project.href;
-              const Wrapper = isLink ? "a" : "div";
-              const linkProps = isLink
-                ? { href: project.href, target: "_blank" as const, rel: "noopener noreferrer" }
-                : {};
+        <div className="mt-12 space-y-8">
+          {projects.map((project, i) => {
+            const isLink = !!project.href;
+            const isFeatured = i === 0;
+            const Wrapper = isLink ? "a" : "div";
+            const linkProps = isLink
+              ? { href: project.href, target: "_blank" as const, rel: "noopener noreferrer" }
+              : {};
 
-              return (
+            return (
+              <AnimateIn key={project.title} delay={80 + i * 80}>
                 <Wrapper
-                  key={project.title}
                   {...linkProps}
-                  className={`group border-border relative overflow-hidden rounded-xl border transition-all duration-300 ${isLink ? "hover:border-primary/40 hover:-translate-y-0.5 hover:shadow-md" : ""}`}
+                  className={`group border-border block overflow-hidden rounded-xl border transition-all duration-300 ${!isFeatured ? "max-w-md" : "shadow-sm"} ${isLink ? "hover:border-primary/40 hover:-translate-y-1 hover:shadow-lg" : ""}`}
                 >
                   <ImageLightbox
                     src={project.image}
@@ -53,17 +55,25 @@ export function PortfolioSection() {
                     lightbox={!isLink}
                   />
 
-                  <div className="p-5">
+                  <div className={isFeatured ? "p-6 md:p-8" : "p-5"}>
                     <div className="flex items-start justify-between gap-2">
-                      <h3 className="text-base font-medium">{project.title}</h3>
+                      <h3
+                        className={
+                          isFeatured ? "text-lg font-medium md:text-xl" : "text-base font-medium"
+                        }
+                      >
+                        {project.title}
+                      </h3>
                       {isLink && (
                         <ArrowUpRight className="text-muted-foreground group-hover:text-primary size-4 shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                       )}
                     </div>
-                    <p className="text-muted-foreground mt-1.5 text-sm leading-relaxed">
+                    <p
+                      className={`text-muted-foreground leading-relaxed ${isFeatured ? "mt-2 max-w-2xl text-sm md:text-base" : "mt-1.5 text-sm"}`}
+                    >
                       {project.description}
                     </p>
-                    <div className="mt-3 flex flex-wrap gap-1.5">
+                    <div className={`flex flex-wrap gap-1.5 ${isFeatured ? "mt-4" : "mt-3"}`}>
                       {project.tags.map((tag) => (
                         <span
                           key={tag}
@@ -75,10 +85,10 @@ export function PortfolioSection() {
                     </div>
                   </div>
                 </Wrapper>
-              );
-            })}
-          </div>
-        </AnimateIn>
+              </AnimateIn>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
