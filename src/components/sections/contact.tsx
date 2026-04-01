@@ -28,22 +28,29 @@ export function ContactSection() {
                   />
                 </a>
               </Button>
+              <p className="text-muted-foreground mt-3 text-sm">
+                Vali endale sobiv aeg. Vestleme 30 minutit, ilma kohustuseta.
+              </p>
             </div>
 
             <div className="text-muted-foreground mt-10 flex flex-col items-center gap-3 text-sm">
               <a
                 href="mailto:kenert@kenert.dev"
-                className="hover:text-foreground inline-flex items-center gap-2 transition-colors duration-150 hover:gap-2.5"
+                className="hover:text-foreground group/link inline-flex items-center gap-2 transition-colors duration-150"
               >
                 <Mail className="size-4 shrink-0" />
-                kenert@kenert.dev
+                <span className="transition-transform duration-150 group-hover/link:translate-x-0.5">
+                  kenert@kenert.dev
+                </span>
               </a>
               <a
                 href="tel:+358409681214"
-                className="hover:text-foreground inline-flex items-center gap-2 transition-colors duration-150 hover:gap-2.5"
+                className="hover:text-foreground group/link inline-flex items-center gap-2 transition-colors duration-150"
               >
                 <Phone className="size-4 shrink-0" />
-                +358 40 968 1214
+                <span className="transition-transform duration-150 group-hover/link:translate-x-0.5">
+                  +358 40 968 1214
+                </span>
               </a>
             </div>
           </div>

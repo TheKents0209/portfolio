@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "Kas lehega kaasnevad mingid igakuised püsikulud?",
     answer:
-      "Veebilehe ülevalhoidmiseks on vaja domeeni (sinu veebiaadress) ja turvalist serverit. Domeen maksab tavaliselt umbes 15 € aastas. Kuni paarituhande külastajani kuus on majutus minu poolt tasuta, see kuulub paketi hinna sisse. Alles siis, kui sinu lehele tuleb tõsiselt rohkem liiklust, lisandub väike hostingutasu vahemikus 5–15 € kuus. Lehega tuleb kaasa ka sisuhaldussüsteem, kus saad ise tekste ja pilte mugavalt muuta, ilma et peaksid minult iga väikese muudatuse jaoks abi küsima. Erinevalt WordPressist ei küsi mina sinult mingit igakuist haldustasu süsteemi uuendamise või putitamise eest.",
+      "Domeen (sinu veebiaadress) maksab tavaliselt umbes 15 € aastas. Kuni paarituhande külastajani kuus on majutus tasuta ja kuulub paketi hinna sisse. Suurema liikluse korral lisandub väike hostingutasu 5–15 € kuus. Sisuhaldus tuleb lehega kaasa, nii et saad ise tekste ja pilte muuta. Erinevalt WordPressist ei küsi mina sinult igakuist haldustasu.",
   },
   {
     question: "Kui kaua uue veebilehe valmimine aega võtab?",

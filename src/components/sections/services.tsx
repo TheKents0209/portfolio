@@ -65,7 +65,7 @@ export function ServicesSection() {
           {tiers.map((tier, i) => (
             <AnimateIn key={tier.name} delay={i * 100} className="flex flex-col">
               <div
-                className={`relative flex h-full flex-col rounded-xl border p-6 transition-all duration-200 hover:-translate-y-1 ${
+                className={`relative flex h-full flex-col rounded-xl border p-6 transition-all duration-200 ${
                   tier.highlighted
                     ? "border-primary shadow-primary/10 hover:shadow-primary/20 shadow-sm hover:shadow-md"
                     : "border-border hover:border-primary/30 hover:shadow-sm"
