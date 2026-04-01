@@ -6,7 +6,7 @@ const projects = [
   {
     title: "Sanalliset — e-pood",
     description:
-      "Soome ehtemärgi e-pood teemantgraveeritud ehetele kolmel turul. Reaalajas graveeringu eelvaade, toote isikupärastamine, kolmekeelne tugi ja Stripe maksesüsteem.",
+      "E-kaubandusplatvorm, mille ehitasin oma ettevõtte jaoks nullist üles. Kolm turgu (Eesti, Soome, rahvusvaheline), reaalajas graveeringu eelvaade, toote isikupärastamine ja Stripe maksesüsteem. Päris e-pood, mis töötab igapäevaselt.",
     href: "https://sanalliset.ee",
     url: "sanalliset.ee",
     image: "/projects/sanalliset-shop.webp",
@@ -26,7 +26,7 @@ export function PortfolioSection() {
     <section id="portfoolio" className="border-border/40 bg-muted/30 border-y px-6 py-20 md:py-28">
       <div className="mx-auto max-w-5xl">
         <AnimateIn>
-          <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">Tehtud tööd</h2>
+          <h2 className="text-3xl font-medium tracking-tight md:text-4xl">Tehtud tööd</h2>
           <p className="text-muted-foreground mt-3 max-w-lg">
             Projektid, mille olen algusest lõpuni üles ehitanud.
           </p>

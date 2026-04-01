@@ -8,7 +8,7 @@ export function ContactSection() {
       <div className="mx-auto max-w-5xl">
         <AnimateIn>
           <div className="mx-auto max-w-xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">Valmis alustama?</h2>
+            <h2 className="text-3xl font-medium tracking-tight md:text-4xl">Valmis alustama?</h2>
             <p className="text-muted-foreground mt-4 text-lg">
               Broneeri tasuta konsultatsioon. Arutame rahulikult läbi, milline lahendus sinu
               ettevõttele kõige paremini sobib.

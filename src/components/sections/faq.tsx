@@ -41,7 +41,7 @@ export function FAQSection() {
       <div className="mx-auto max-w-5xl">
         <div className="grid gap-10 md:grid-cols-5 md:gap-16">
           <div className="md:col-span-2">
-            <h2 className="text-2xl font-medium tracking-tight md:text-3xl">
+            <h2 className="text-3xl font-medium tracking-tight md:text-4xl">
               Küsimused ja vastused
             </h2>
             <p className="text-muted-foreground mt-4">

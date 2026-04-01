@@ -23,10 +23,10 @@ const painPoints = [
 
 export function ProblemSection() {
   return (
-    <section id="probleem" className="px-6 py-16 md:py-24">
+    <section id="probleem" className="border-border/40 border-t px-6 py-16 md:py-24">
       <div className="mx-auto max-w-5xl">
         <AnimateIn>
-          <h2 className="max-w-xl text-2xl font-medium tracking-tight md:text-3xl">
+          <h2 className="max-w-xl text-3xl font-medium tracking-tight md:text-4xl">
             Kas su koduleht tekitab rohkem peavalu kui kasu?
           </h2>
           <p className="text-muted-foreground mt-4 max-w-lg">

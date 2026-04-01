@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     type: "website",
   },
   robots: { index: true, follow: true },
+  other: {
+    "theme-color": "#ffffff",
+  },
 };
 
 export default function RootLayout({
