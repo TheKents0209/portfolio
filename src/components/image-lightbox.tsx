@@ -1,10 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { lazy, useState } from "react";
 import Image from "next/image";
 import { Expand } from "lucide-react";
 import { BrowserFrame } from "@/components/browser-frame";
-import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
+
+const Dialog = lazy(() => import("@/components/ui/dialog").then((m) => ({ default: m.Dialog })));
+const DialogContent = lazy(() =>
+  import("@/components/ui/dialog").then((m) => ({ default: m.DialogContent }))
+);
+const DialogTitle = lazy(() =>
+  import("@/components/ui/dialog").then((m) => ({ default: m.DialogTitle }))
+);
 
 interface ImageLightboxProps {
   src: string;
@@ -42,6 +49,7 @@ export function ImageLightbox({ src, alt, url, isInteractive, lightbox }: ImageL
             alt={alt}
             width={800}
             height={450}
+            sizes="(max-width: 448px) 100vw, (max-width: 768px) 90vw, 800px"
             className={`aspect-video w-full object-cover ${isInteractive ? "transition-transform duration-500" : ""}`}
           />
         </BrowserFrame>
@@ -58,7 +66,7 @@ export function ImageLightbox({ src, alt, url, isInteractive, lightbox }: ImageL
         )}
       </div>
 
-      {lightbox && (
+      {lightbox && open && (
         <Dialog open={open} onOpenChange={setOpen}>
           <DialogContent
             showCloseButton
@@ -71,8 +79,8 @@ export function ImageLightbox({ src, alt, url, isInteractive, lightbox }: ImageL
                 alt={alt}
                 width={1600}
                 height={900}
+                sizes="90vw"
                 className="aspect-video w-full object-cover"
-                priority
               />
             </BrowserFrame>
           </DialogContent>

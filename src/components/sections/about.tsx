@@ -12,6 +12,7 @@ export function AboutSection() {
               alt="Kenert Lauri portree"
               width={1000}
               height={1000}
+              sizes="(max-width: 768px) 320px, 280px"
               className="mx-auto aspect-square w-full max-w-xs rounded-2xl object-cover transition-transform duration-300 hover:scale-[1.02]"
             />
           </AnimateIn>

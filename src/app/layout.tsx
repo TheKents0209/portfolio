@@ -16,6 +16,15 @@ export const metadata: Metadata = {
   title: "Kenert Lauri | Veebiarendus",
   description:
     "Kiired, turvalised ja hooldusevabad veebilehed ettevõtetele. Ei mingit WordPressi peavalu.",
+  metadataBase: new URL("https://kenert.dev"),
+  openGraph: {
+    title: "Kenert Lauri | Veebiarendus",
+    description:
+      "Kiired, turvalised ja hooldusevabad veebilehed ettevõtetele. Ei mingit WordPressi peavalu.",
+    locale: "et_EE",
+    type: "website",
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({
