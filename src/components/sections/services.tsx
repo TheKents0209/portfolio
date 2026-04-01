@@ -56,7 +56,7 @@ export function ServicesSection() {
             </h2>
             <p className="text-muted-foreground mt-4">
               Kõik paketid sisaldavad turvalist serverimajutust, mobiilisõbralikku disaini ja
-              tehnilist tuge. Hinnad on alates.
+              tehnilist tuge.
             </p>
           </div>
         </AnimateIn>
@@ -76,9 +76,9 @@ export function ServicesSection() {
                 )}
                 <h3 className="text-lg font-medium">{tier.name}</h3>
                 <p className="text-muted-foreground mt-2 text-sm">{tier.description}</p>
-                <div className="mt-6 flex items-baseline gap-1">
-                  <span className="text-4xl font-medium tracking-tight">{tier.price}€</span>
-                  <span className="text-muted-foreground text-sm">alates</span>
+                <div className="mt-6">
+                  <span className="text-muted-foreground text-xs">alates</span>
+                  <div className="text-4xl font-medium tracking-tight">{tier.price}€</div>
                 </div>
 
                 <ul className="mt-8 flex flex-col gap-3">
