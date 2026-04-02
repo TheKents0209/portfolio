@@ -3,21 +3,21 @@ import { AnimateIn } from "@/components/animate-in";
 const painPoints = [
   {
     number: "01",
-    title: "Aeglane ja kohmakas",
+    title: "Aeglane leht kaotab kliente",
     description:
-      "Tänapäeva klient ei jaksa oodata. Kui leht laeb liiga kaua, läheb külastaja lihtsalt konkurendi juurde.",
+      "Google'i andmetel lahkub üle poole külastajatest, kui leht ei avane 3 sekundiga. Kiirus pole mugavus, see on raha",
   },
   {
     number: "02",
-    title: "Pidev hooldus ja uuendused",
+    title: "Peidetud kulud iga kuu",
     description:
-      "Lõputud uuendused ja katki minevad lisad. Sa ei peaks olema omaenda kodulehe IT-tugi.",
+      "Hosting, hooldus, turvauuendused, pluginate litsentsid. Paljude kodulehtede puhul maksad sa iga kuu selle eest, et leht üldse püsti püsiks.",
   },
   {
     number: "03",
-    title: "Turvalisus on küsimärgi all",
+    title: "Turvalisus, millele keegi ei mõtle",
     description:
-      "Häkitud leht ei tähenda alati tühja ekraani. Tihti tähendab see hoopis lekitatud kliendiandmeid, rikutud mainet ja nädalaid peavalu asjade korda tegemisel.",
+      "Häkitud leht ei tähenda alati tühja ekraani. Tihti tähendab see lekkinuid kliendiandmeid ja kahjustatud mainet.",
   },
 ];
 
@@ -27,10 +27,10 @@ export function ProblemSection() {
       <div className="mx-auto max-w-5xl">
         <AnimateIn>
           <h2 className="max-w-xl text-3xl font-medium tracking-tight md:text-4xl">
-            Kas su koduleht tekitab rohkem peavalu kui kasu?
+            Miks paljud kodulehed oma tööd ei tee?
           </h2>
           <p className="text-muted-foreground mt-4 max-w-lg">
-            Sinu aeg peaks kuluma äri kasvatamisele, mitte tehniliste murede lahendamisele.
+            Kolm levinud probleemi, mida saab vältida, kui alustada õigesti.
           </p>
         </AnimateIn>
 

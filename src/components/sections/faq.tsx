@@ -11,27 +11,32 @@ const faqs = [
   {
     question: "Kas ma saan ise tekste ja pilte muuta?",
     answer:
-      "Jah, kindlasti. Jätsin keerulised süsteemid ära ja ehitasin halduse nii loogiliseks, et igaüks saab hakkama. Saad ise sisu muuta ja uusi tooteid lisada täpselt siis, kui soovid, ilma et peaksid iga väikese asja pärast minu poole pöörduma.",
+      "Jah, kindlasti. Sisuhaldus on ehitatud nii lihtsaks, et igaüks saab hakkama. Saad ise sisu muuta ja uusi tooteid lisada täpselt siis, kui soovid, ilma et peaksid iga väikese asja pärast minu poole pöörduma.",
   },
   {
     question: "Kas lehega kaasnevad mingid igakuised püsikulud?",
     answer:
-      "Domeen (sinu veebiaadress) maksab tavaliselt umbes 15 € aastas. Kuni paarituhande külastajani kuus on majutus tasuta ja kuulub paketi hinna sisse. Suurema liikluse korral lisandub väike hostingutasu 5–15 € kuus. Sisuhaldus tuleb lehega kaasa, nii et saad ise tekste ja pilte muuta. Erinevalt WordPressist ei küsi mina sinult igakuist haldustasu.",
+      "Majutus on väikeettevõttele tasuta ja kuulub paketi hinna sisse. Ainus jooksev kulu on domeen (sinu veebiaadress), umbes 15€ aastas. Sisuhaldus tuleb lehega kaasa, nii et saad ise tekste ja pilte muuta. Erinevalt WordPressist ei küsi mina sinult igakuist haldustasu.",
   },
   {
     question: "Kui kaua uue veebilehe valmimine aega võtab?",
     answer:
-      "Lihtsama maandumislehe teen valmis juba ühe või kahe nädalaga. Mahukam ärileht võtab tavaliselt kolm kuni neli nädalat ja e-poe puhul tasub arvestada umbes pooleteisega. Räägime ajakava kohe esimesel kohtumisel selgeks.",
+      "Lihtsama maandumislehe teen valmis juba ühe või kahe nädalaga. Mahukam ärileht võtab tavaliselt kolm kuni neli nädalat ja e-poe puhul tasub arvestada umbes kuue kuni kaheksa nädalaga. Räägime ajakava kohe esimesel kohtumisel selgeks.",
   },
   {
     question: "Mul on praegu vana WordPressi leht. Kas saame selle üle kolida?",
     answer:
-      "Absoluutselt, see on väga levinud olukord. Tõstan sinu tekstid ja pildid uuele kiirele platvormile ning hoolitsen selle eest, et Google ja sinu senised kliendid leiaksid uue lehe ilusti üles. Üleminek on sujuv ja sinu äri ei jää vahepeal seisma.",
+      "Jah, see on tavaline olukord. Tõstan sinu tekstid ja pildid uuele kiirele platvormile ning hoolitsen selle eest, et Google ja sinu senised kliendid leiaksid uue lehe ilusti üles. Üleminek on sujuv ja sinu äri ei jää vahepeal seisma.",
   },
   {
     question: "Mis saab pärast lehe valmimist?",
     answer:
-      "Leht ei jää üksi. Pärast üleandmist näitan sulle rahulikult ette, kuidas sisuhaldus töötab. Kui midagi tekib, olen alati ühe sõnumi kaugusel. Lisaks, kuna leht on ehitatud kaasaegse tehnoloogiaga, ei ole vaja pidevalt pluginaid uuendada ega turvaaukude pärast muretseda nagu WordPressis.",
+      "Leht ei jää üksi. Pärast üleandmist näitan sulle rahulikult ette, kuidas sisuhaldus töötab. Esimesed 30 päeva pärast üleandmist on tugi hinnas. Pärast seda saad alati kirjutada ja lepime kokku, mis abi vajad. Lisaks, kuna leht on ehitatud kaasaegse tehnoloogiaga, ei ole vaja pidevalt pluginaid uuendada ega turvaaukude pärast muretseda nagu WordPressis.",
+  },
+  {
+    question: "Kas saate ka eestikeelse domeeni (.ee) registreerida?",
+    answer:
+      "Jah, aitan sul .ee domeeni registreerida ja seadistada. Domeen registreeritakse sinu nimele, nii et see on alati sinu oma.",
   },
 ];
 

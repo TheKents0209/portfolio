@@ -4,23 +4,21 @@ import { AnimateIn } from "@/components/animate-in";
 const differentiators = [
   {
     title: "Välkkiire laadimine",
-    description:
-      "Leht avaneb silmapilkselt. See hoiab külastajate tähelepanu ja meeldib väga ka Google'ile.",
+    description: "Su leht avaneb alla sekundi. Külastaja jääb, Google tõstab sind kõrgemale.",
   },
   {
-    title: "Ei mingit hoolduspeavalu",
+    title: "Pole igakuist hooldust",
     description:
-      "Erinevalt WordPressist ei vaja see leht igakuist putitamist ega tüütuid süsteemiuuendusi. Sinu leht on algusest peale turvaline ja lihtsalt töötab.",
+      "Pole pluginaid, pole turvauuendusi, pole üllatusi. Leht töötab, sina ei pea selle peale mõtlema.",
   },
   {
-    title: "Sisu muutmine on imelihtne",
-    description:
-      "Tahad teksti või pilti vahetada? Saad seda teha ise ja mugavalt, ilma et peaksid arendajale iga liigutuse eest maksma. Süsteem on loogiline ja lihtne.",
+    title: "Muuda sisu ise",
+    description: "Tekst, pildid, hinnad. Logid sisse, muudad ära, salvestad. Arendajat pole vaja.",
   },
   {
     title: "Google leiab su üles",
     description:
-      "Koduleht on algusest peale ehitatud nii, et otsingumootorid seda armastavad. Nii leiavad uued kliendid su kergemini üles.",
+      "Kiirus, õige struktuur ja tehniline SEO on algusest peale paigas. Mitte pluginaga peale kleebitud.",
   },
 ];
 
@@ -31,10 +29,10 @@ export function SolutionSection() {
         <div className="grid gap-12 md:grid-cols-5 md:gap-16">
           <AnimateIn className="md:col-span-2">
             <h2 className="text-3xl font-medium tracking-tight md:text-4xl">
-              Keskendu oma ärile, mina hoolitsen tehnika eest.
+              Kuidas ma need probleemid lahendanud olen.
             </h2>
             <p className="text-muted-foreground mt-4">
-              Ei WordPressi, ei pluginaid, ei pidevat hooldust.
+              Ilma WordPressita. Ilma pluginateta. Ilma igakuise arveteta.
             </p>
           </AnimateIn>
 

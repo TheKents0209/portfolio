@@ -33,9 +33,9 @@ export function AboutSection() {
               vajab: lehte, mis lihtsalt töötab, näeb hea välja ja ei nõua pidevat sorkimist.
             </p>
             <p className="text-muted-foreground mt-3 leading-relaxed">
-              Töötan Eestis ja Soomes ning räägin eesti, soome ja inglise keelt. Olen hariduselt
-              Metropolia taustaga arendaja, aga minuga suheldes sa keerulisi IT-termineid kartma ei
-              pea. Seletan ka kõige tehnilisemaid lahendusi lihtsalt ja arusaadavalt.
+              Olen lõpetanud Espoos IT-eriala ja räägin eesti, soome ja inglise keelt. Aga minuga
+              suheldes sa keerulisi IT-termineid kartma ei pea. Seletan ka kõige tehnilisemaid
+              lahendusi lihtsalt ja arusaadavalt.
             </p>
           </AnimateIn>
         </div>

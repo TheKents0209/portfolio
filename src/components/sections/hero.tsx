@@ -10,21 +10,22 @@ export function HeroSection() {
             className="hero-in text-primary mb-4 text-sm font-medium tracking-wide"
             style={{ animationDelay: "0ms" }}
           >
-            Veebiarendus ettevõtetele
+            Veebilehed igale vajadusele
           </p>
           <h1
-            className="hero-in text-foreground text-4xl font-semibold tracking-tight md:text-5xl lg:text-7xl"
+            className="hero-in text-foreground text-5xl font-semibold tracking-tight md:text-6xl lg:text-7xl"
             style={{ animationDelay: "80ms" }}
           >
-            Koduleht, mis toob
-            <span className="text-primary"> kliente, mitte peavalu.</span>
+            Kiire koduleht. <br />
+            Aus hind. <br />
+            <span className="text-primary">Pole igakuist jama.</span>
           </h1>
           <p
             className="hero-in text-muted-foreground mt-6 max-w-lg text-lg leading-relaxed"
             style={{ animationDelay: "200ms" }}
           >
-            Unusta pidevad uuendused ja kokkujooksvad pluginad. Ehitan sulle välkkiire lehe, mis
-            lihtsalt töötab, et sina saaksid keskenduda oma päris tööle.
+            Ehitan kodulehe, mis on kiire, turvaline ja ei maksa sulle iga kuu. Sina tegeled oma
+            äriga.
           </p>
           <div
             className="hero-in mt-10 flex flex-col items-center gap-4 md:flex-row"
