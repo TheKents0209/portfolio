@@ -13,15 +13,15 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Kenert Lauri | Veebiarendus",
+  title: "Kenert Lauri | Full-stack developer",
   description:
-    "Kiired, turvalised ja hooldusevabad veebilehed ettevõtetele. Ei mingit WordPressi peavalu.",
+    "Full-stack developer in Tartu. Built and ran the Sanalliset online shop and its back office: Next.js, TypeScript, Postgres, Stripe.",
   metadataBase: new URL("https://kenert.dev"),
   openGraph: {
-    title: "Kenert Lauri | Veebiarendus",
+    title: "Kenert Lauri | Full-stack developer",
     description:
-      "Kiired, turvalised ja hooldusevabad veebilehed ettevõtetele. Ei mingit WordPressi peavalu.",
-    locale: "et_EE",
+      "Full-stack developer in Tartu. Built and ran the Sanalliset online shop and its back office: Next.js, TypeScript, Postgres, Stripe.",
+    locale: "en_US",
     type: "website",
   },
   robots: { index: true, follow: true },
@@ -36,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="et" className={`${geist.variable} ${jakarta.variable} h-full antialiased`}>
+    <html lang="en" className={`${geist.variable} ${jakarta.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">{children}</body>
     </html>
   );
