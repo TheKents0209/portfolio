@@ -13,14 +13,14 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Kenert Lauri | Full-stack developer",
+  title: "Kenert Lauri | Frontend developer",
   description:
-    "Full-stack developer in Tartu. Built and ran the Sanalliset online shop and its back office: Next.js, TypeScript, Postgres, Stripe.",
+    "Frontend developer in Tartu, Estonia. Co-founded and built Sanalliset, an online jewellery store with 3,800+ orders, on Next.js, TypeScript, Supabase and Stripe.",
   metadataBase: new URL("https://kenert.dev"),
   openGraph: {
-    title: "Kenert Lauri | Full-stack developer",
+    title: "Kenert Lauri | Frontend developer",
     description:
-      "Full-stack developer in Tartu. Built and ran the Sanalliset online shop and its back office: Next.js, TypeScript, Postgres, Stripe.",
+      "Frontend developer in Tartu, Estonia. Co-founded and built Sanalliset, an online jewellery store with 3,800+ orders, on Next.js, TypeScript, Supabase and Stripe.",
     locale: "en_US",
     type: "website",
   },

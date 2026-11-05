@@ -133,6 +133,49 @@
   transform: scaleX(0.7);
 }
 
+/* Price demo: green/red when a price moves, amber pulse on the Renders cell on every re-render */
+:root {
+  --price-up: oklch(0.627 0.194 149.214);
+  --price-down: var(--destructive);
+  --render-pulse: oklch(0.82 0.16 80);
+}
+@keyframes price-up {
+  from {
+    background-color: color-mix(in oklch, var(--price-up) 30%, transparent);
+    color: var(--price-up);
+  }
+}
+@keyframes price-down {
+  from {
+    background-color: color-mix(in oklch, var(--price-down) 30%, transparent);
+    color: var(--price-down);
+  }
+}
+@keyframes render-flash {
+  from {
+    background-color: color-mix(in oklch, var(--render-pulse) 45%, transparent);
+    color: var(--foreground);
+  }
+}
+.price-up {
+  animation: price-up 1.2s ease-out;
+}
+.price-down {
+  animation: price-down 1.2s ease-out;
+}
+.render-flash {
+  animation: render-flash 0.6s ease-out;
+}
+.price-swatch-up {
+  background-color: color-mix(in oklch, var(--price-up) 60%, transparent);
+}
+.price-swatch-down {
+  background-color: color-mix(in oklch, var(--price-down) 60%, transparent);
+}
+.render-swatch {
+  background-color: var(--render-pulse);
+}
+
 /* ── Scroll-triggered section animations ── */
 .animate-in-wrap {
   opacity: 0;
